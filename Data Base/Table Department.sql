@@ -1,0 +1,21 @@
+USE [Grifindo_Leave_System]
+GO
+
+/****** Object:  Table [dbo].[Department]    Script Date: 12/13/2024 9:19:47 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Department](
+	[Dep_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Department] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_Department] PRIMARY KEY CLUSTERED 
+(
+	[Dep_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+

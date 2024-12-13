@@ -100,7 +100,7 @@ namespace Grifindo_Sample_LMS.Admin
             if (result > 0)
             {
                 managerClass.LoadLeaveRequest();
-                MessageBox.Show("Leave apporved and Balance updated successfully");
+                MessageBox.Show("Leave rejected and Balance updated successfully");
             }
         }
     }
