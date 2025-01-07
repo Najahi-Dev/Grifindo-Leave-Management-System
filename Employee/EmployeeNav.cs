@@ -54,5 +54,17 @@ namespace Grifindo_Sample_LMS.Employee
             LeaveStatusForm leaveStatus = new LeaveStatusForm(emp_ID);
             tool.navigate(leaveStatus,centralpanel);
         }
+
+        private void btnuser_MouseHover(object sender, EventArgs e)
+        {
+            btnuser.Text = "Logout";
+            btnuser.IconChar = FontAwesome.Sharp.IconChar.SignOut;
+        }
+
+        private void btnuser_MouseLeave(object sender, EventArgs e)
+        {
+            btnuser.Text = emp_ID;
+            btnuser.IconChar = FontAwesome.Sharp.IconChar.User;
+        }
     }
 }

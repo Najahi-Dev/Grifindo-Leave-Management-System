@@ -15,11 +15,13 @@ namespace Grifindo_Sample_LMS
     public partial class AdminNav : Form
     {
         commonTools tool = new commonTools();
+        string loginusername = "";
 
         public AdminNav(string username)
         {
             InitializeComponent();
             btnuserIcon.Text = username;
+            loginusername = username;
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -87,6 +89,18 @@ namespace Grifindo_Sample_LMS
         {
             ReportForm report = new ReportForm();
             tool.navigate(report,centralpanel);
+        }
+
+        private void btnuserIcon_MouseHover(object sender, EventArgs e)
+        {
+            btnuserIcon.Text = "Logout";
+            btnuserIcon.IconChar = FontAwesome.Sharp.IconChar.SignOut;
+        }
+
+        private void btnuserIcon_MouseLeave(object sender, EventArgs e)
+        {
+            btnuserIcon.Text = loginusername;
+            btnuserIcon.IconChar = FontAwesome.Sharp.IconChar.User;
         }
     }
 }

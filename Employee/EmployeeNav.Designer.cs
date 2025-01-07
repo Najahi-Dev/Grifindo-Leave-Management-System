@@ -140,6 +140,8 @@
             this.btnuser.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnuser.UseVisualStyleBackColor = true;
             this.btnuser.Click += new System.EventHandler(this.btnuser_Click);
+            this.btnuser.MouseLeave += new System.EventHandler(this.btnuser_MouseLeave);
+            this.btnuser.MouseHover += new System.EventHandler(this.btnuser_MouseHover);
             // 
             // btnHome
             // 

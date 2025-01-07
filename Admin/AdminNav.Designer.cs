@@ -133,6 +133,8 @@
             this.btnuserIcon.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnuserIcon.UseVisualStyleBackColor = true;
             this.btnuserIcon.Click += new System.EventHandler(this.btnuserIcon_Click);
+            this.btnuserIcon.MouseLeave += new System.EventHandler(this.btnuserIcon_MouseLeave);
+            this.btnuserIcon.MouseHover += new System.EventHandler(this.btnuserIcon_MouseHover);
             // 
             // guna2ControlBox1
             // 
