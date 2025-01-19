@@ -253,7 +253,7 @@ namespace Grifindo_Sample_LMS
         //============================================================================================================================
         public DataTable ExecuteQuery(string query, SqlParameter[] parameters2 = null)
         {
-            using(SqlConnection conn = new SqlConnection("Data Source=ANGRYBIRD\\SQLEXPRESS;Initial Catalog=Grifindo_Leave_System;Integrated Security=True;Encrypt=False"))
+            using(SqlConnection conn = new SqlConnection("Data Source=MARCO\\SQLEXPRESS;Initial Catalog=Grifindo_Leave_System;Integrated Security=True;Encrypt=False"))
             {
                 conn.Open();
                 using (SqlCommand cmd = new SqlCommand(query, conn))
@@ -278,7 +278,7 @@ namespace Grifindo_Sample_LMS
         //=================================================================================================================================
         public object ExecuteScaler(string sql, SqlParameter[] parameters = null)
         {
-            using (SqlConnection conn = new SqlConnection("Data Source=ANGRYBIRD\\SQLEXPRESS;Initial Catalog=Grifindo_Leave_System;Integrated Security=True;Encrypt=False"))
+            using (SqlConnection conn = new SqlConnection("Data Source=MARCO\\SQLEXPRESS;Initial Catalog=Grifindo_Leave_System;Integrated Security=True;Encrypt=False"))
             {
                 using( SqlCommand cmd = new SqlCommand(sql, conn))
                 {
@@ -294,7 +294,7 @@ namespace Grifindo_Sample_LMS
         //===================================================================================================================================
         internal object ExecuteScalerWithoutPara(string sql)
         {
-            using (SqlConnection conn = new SqlConnection("Data Source=ANGRYBIRD\\SQLEXPRESS;Initial Catalog=Grifindo_Leave_System;Integrated Security=True;Encrypt=False"))
+            using (SqlConnection conn = new SqlConnection("Data Source=MARCO\\SQLEXPRESS;Initial Catalog=Grifindo_Leave_System;Integrated Security=True;Encrypt=False"))
             {
                 using (SqlCommand cmd = new SqlCommand(sql, conn))
                 {

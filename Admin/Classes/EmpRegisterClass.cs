@@ -30,7 +30,8 @@ namespace Grifindo_Sample_LMS.Admin.Classes
         internal void EmployeeReg()
         {
             string sql = "Insert Into Add_Employee(Employee_ID,First_Name, Last_Name,Address,Date_of_Birth,Email,Phone_Number,Password,Employee_Status,Date_of_Joining,Gender,Role,Job_Title,Department) " +
-                "Values('" + Employee_ID + "','" + First_Name + "','" + Last_Name + "','" + Address + "','" + Date_of_Birth + "','" + Email + "'," + Phone_Number + ",'" + Password + "','" + Employee_Status + "','" + Join_Date + "','" + Gender + "','" + Role + "','" + Job_Title + "','" + Department + "')";
+                "Values('" + Employee_ID + "','" + First_Name + "','" + Last_Name + "','" + Address + "','" + Date_of_Birth + "','" + Email + "'," + Phone_Number + ",'" + Password + "'," +
+                "'" + Employee_Status + "','" + Join_Date + "','" + Gender + "','" + Role + "','" + Job_Title + "','" + Department + "')";
 
             if (ExecuteQuery(sql, funnctionTypes.register))
             {
@@ -40,7 +41,9 @@ namespace Grifindo_Sample_LMS.Admin.Classes
 
         internal void EmployeeEdit()
         {
-            string sql = "UPDATE Add_Employee SET Employee_ID = '" + Employee_ID + "', First_Name = '" + First_Name + "', Last_Name = '" + Last_Name + "', Address = '" + Address + "', Date_of_Birth = '" + Date_of_Birth + "', Email = '" + Email + "', Phone_Number = " + Phone_Number + ", Password = " + Password + ", Employee_Status = '" + Employee_Status + "', Date_of_Joining = '" + Join_Date + "', Gender = '" + Gender + "',Role = '" + Role + "', Job_Title = '" + Job_Title + "', Department = '" + Department + "' WHERE Employee_ID = '" + Employee_ID + "'";
+            string sql = "UPDATE Add_Employee SET Employee_ID = '" + Employee_ID + "', First_Name = '" + First_Name + "', Last_Name = '" + Last_Name + "', Address = '" + Address + "'," +
+                " Date_of_Birth = '" + Date_of_Birth + "', Email = '" + Email + "', Phone_Number = " + Phone_Number + ", Password = " + Password + ", Employee_Status = '" + Employee_Status + "', " +
+                "Date_of_Joining = '" + Join_Date + "', Gender = '" + Gender + "',Role = '" + Role + "', Job_Title = '" + Job_Title + "', Department = '" + Department + "' WHERE Employee_ID = '" + Employee_ID + "'";
 
             if (ExecuteQuery(sql, funnctionTypes.update))
             {

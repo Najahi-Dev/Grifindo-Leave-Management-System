@@ -34,21 +34,12 @@ namespace Grifindo_Sample_LMS.Common
 
             if (log.ValidateAdminLogin(username,password))
             {
-                //MessageBox.Show($"Login Successfully, Welcome Back {username}", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 AdminWelcomeForm welcome = new AdminWelcomeForm(username);
                 welcome.Show();
                 this.Hide();
-                //AdminNav nav = new AdminNav(username);
-                //nav.Show();
-                //this.Hide();
             }
             else if (log.ValidateEmployeeLogin(username,password))
             {
-                //MessageBox.Show($"Login Successfully, Welcome Back {username}", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //EmployeeNav nav = new EmployeeNav(username);
-                //nav.Show();
-                //this.Hide();
-
                 EmployeeWelcomeForm wel = new EmployeeWelcomeForm(username);
                 wel.Show();
                 this.Hide();

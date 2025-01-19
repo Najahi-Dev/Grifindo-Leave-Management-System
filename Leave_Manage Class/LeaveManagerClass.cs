@@ -174,7 +174,8 @@ namespace Grifindo_Sample_LMS.Leave_Manage_Class
 
         internal void LoadLeaveRequest()
         {
-            string sql = " SELECT LeaveID,EmployeeID as [Employee ID], LeaveType as [Leave Type], Date, TimeSlot as [Time Slot], Reason, Status, AppliedDate,AdminComment as [Admin Note] FROM tblLeave WHERE Status = 'Pending' ";
+            string sql = " SELECT LeaveID,EmployeeID as [Employee ID], LeaveType as [Leave Type], Date, TimeSlot as [Time Slot], Reason, " +
+                "Status, AppliedDate,AdminComment as [Admin Note] FROM tblLeave WHERE Status = 'Pending' ";
             db.LoadDataFromDB (sql, dgvLeave);
         }
         //===========================================================================================================================

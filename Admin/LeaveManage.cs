@@ -83,7 +83,8 @@ namespace Grifindo_Sample_LMS.Admin
 
         private void btnsearch_Click(object sender, EventArgs e)
         {
-            tool.Search(" SELECT tblEmployeeLeave.EmployeeID as [Employee ID], Add_Employee.Last_Name as [Name], tblEmployeeLeave.AnnualLeave as [Annual Count], tblEmployeeLeave.CasualLeave as [Casual Count], tblEmployeeLeave.ShortLeave as [Short Count], tblEmployeeLeave.OffDay as [Off Day],tblEmployeeLeave.HalfDayLeave as [Half Day] FROM tblEmployeeLeave " +
+            tool.Search(" SELECT tblEmployeeLeave.EmployeeID as [Employee ID], Add_Employee.Last_Name as [Name], tblEmployeeLeave.AnnualLeave as [Annual Count], tblEmployeeLeave.CasualLeave as [Casual Count], " +
+                "tblEmployeeLeave.ShortLeave as [Short Count], tblEmployeeLeave.OffDay as [Off Day],tblEmployeeLeave.HalfDayLeave as [Half Day] FROM tblEmployeeLeave " +
                 "JOIN Add_Employee ON tblEmployeeLeave.EmployeeID = Add_Employee.Employee_ID WHERE tblEmployeeLeave.EmployeeID = '"+txtsearch.Text+"' ", dgvLeaveType);
 
             try

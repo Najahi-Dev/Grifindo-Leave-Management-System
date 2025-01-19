@@ -36,7 +36,8 @@ namespace Grifindo_Sample_LMS.Admin.Classes
 
         internal void AdminEdit()
         {
-            string sql = "Update Admin_Details SET Admin_ID = '" + Admin_ID + "',First_Name='" + First_Name + "',Last_Name='" + Last_Name + "',Address='" + Address + "',Date_of_Birth='" + Date_of_Birth + "',Email='" + Email + "',Phone_Number=" + Phone_Number + ",Password='" + Password + "',Gender='" + Gender + "' ,Department = '"+Department+"' " +
+            string sql = "Update Admin_Details SET Admin_ID = '" + Admin_ID + "',First_Name='" + First_Name + "',Last_Name='" + Last_Name + "',Address='" + Address + "'," +
+                "Date_of_Birth='" + Date_of_Birth + "',Email='" + Email + "',Phone_Number=" + Phone_Number + ",Password='" + Password + "',Gender='" + Gender + "' ,Department = '"+Department+"' " +
                 "WHERE Admin_ID = '" + Admin_ID + "'";
 
             if (ExecuteQuery(sql, funnctionTypes.update))

@@ -27,7 +27,7 @@ namespace Grifindo_Sample_LMS.Common
 
     internal class DBCommon
     {
-        internal SqlConnection con = new SqlConnection("Data Source=ANGRYBIRD\\SQLEXPRESS;Initial Catalog=Grifindo_Leave_System;Integrated Security=True;Encrypt=False");
+        internal SqlConnection con = new SqlConnection("Data Source=MARCO\\SQLEXPRESS;Initial Catalog=Grifindo_Leave_System;Integrated Security=True;Encrypt=False");
 
         //=========================================================================================================================================
         internal string EmployeeID { get; set; }
